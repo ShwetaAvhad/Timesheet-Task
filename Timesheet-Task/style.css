@@ -1,0 +1,118 @@
+body
+{
+    box-sizing: border-box;
+}
+.viewtimesheetdiv
+{
+    text-align: end;
+    padding: 1%;
+}
+.maintable
+{
+    padding: 1%;
+}
+h3
+{
+    text-align: center;
+}
+#date
+{ 
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+.dropdown #projectDropdown,#leaveDropdown,#subprojectDropdown,#branchDropdown,#projectDropdown1,#subprojectDropdown1,#branchDropdown1
+{
+    background-color: white;
+    color: black;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 5%;
+}
+.dropdownlabel1
+{
+    margin-left: 2%;
+}
+.dropdownlabel2
+{
+    margin-left: 10%;
+}
+.dropdownlabel3
+{
+    margin-left: 11%;
+}
+.dropdowns .dropdown
+{
+    display: inline-block; 
+    padding: 10px ;
+}
+.add-activity
+{
+    background-color: darkgrey;
+    margin-left: 50%;
+    border-radius: 4px;
+}
+.time,.time1
+{
+    width: 20%;
+    border-radius: 4px; 
+    border: 2px solid #ccc;
+}
+textarea
+{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;  
+    box-sizing: border-box;  
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.edit-icon button
+{
+  
+   font-size: 50px;
+   border: none;
+   background-color: white;
+   color: green;
+   margin-top: 230%;
+   margin-left: 15%;
+   
+}
+.preview-btn
+{
+    text-align: center;
+}
+.table2-div
+{
+    padding: 3%;
+}
+#table2 th
+{ 
+    background-color:darkgray;
+}
+.cancelbutton
+{
+    /* border: 2px solid rgb(44, 43, 43); */
+    border-radius: 4px;
+    background-color :rgb(97, 97, 221);
+}
+.container
+{
+    text-align: center;
+}
+.back-div
+{
+    text-align:start;
+    margin-left: 3%;
+}
+#edit-form input
+{
+    margin-bottom: 2px;
+    border: 1px solid rgb(170, 165, 165);
+    border-radius: 3px;
+    width: 40%;
+    padding: 0.5%;
+}

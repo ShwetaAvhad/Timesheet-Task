@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="viewtimesheetdiv">
+        <button class="btn btn-primary" id="viewtimesheet" onclick="GetData()">View Timesheets</button>
+    </div>
+    <h3>Add Timesheets</h3>
+    <div class="maintable">
+        <table class="table table-bordered" id="table1">
+            <tr>
+                <th>Date</th>
+                <th>On Leave</th>
+                <th>Activities</th>
+                <th><i class="bi bi-pen-fill"></i></th>
+            </tr>
+            <tr>
+                <td width="200px">
+                    <input type="date" id="myDate" placeholder="dd-mm-yyyy">
+                    
+                </td>
+                <td width="150px">
+                    <div class="dropdown">
+                        <select name="dropdown" id="leaveDropdown"> 
+                            <option value="Yes">Yes</option>
+                            <option value="No" selected>No</option>
+                        </select>
+                    </div>
+                </td>
+                <td>
+                    <div class="activity-div">
+                        <div class="dropdowns">
+                            <label for="projectDropdown" class="dropdownlabel1">Project</label>
+                            <label for="projectDropdown" class="dropdownlabel2">Sub-Project</label>
+                            <label for="projectDropdown" class="dropdownlabel3">Batch</label>
+                            <br>
+    
+                            <div class="dropdown">
+                                <select name="dropdown" id="projectDropdown"> 
+                                    <!-- <option value=" " selected>Select Project</option>
+                                    <option value="HTML">HTML</option>
+                                    <option value="CSS" >CSS</option> -->
+                                </select>
+                            </div>
+    
+                            <div class="dropdown">
+                                <select name="dropdown" id="subprojectDropdown">                                
+                                    <!-- <option value=" " selected>Select Sub Project</option>
+                                    <option value="HTML">HTML</option>
+                                    <option value="CSS" >CSS</option> -->
+                                </select>
+                            </div>    
+                           
+                            <div class="dropdown">
+                                <select name="dropdown" id="branchDropdown"> 
+                                    <!-- <option value=" " selected>Select Batch</option>
+                                    <option value="Auropay">Auropay</option>
+                                    <option value="Payments" >Payments</option> -->
+                                </select>
+                            </div>
+    
+                            
+                        </div>
+                            
+                        <div>
+                            <label>Hours Needed : </label>
+                            <br>
+                            <input type="text" class="time">
+                        </div>
+    
+                        <div>
+                            <label>Activity</label>
+                            <br>
+                            <textarea></textarea>
+                        </div>
+    
+                        <button class="btn add-activity" onclick="addData()">Add Activity</button>
+                    </div>
+
+                </td>
+                <td width="10%" class="edit-icon">
+                    <button class="plus-button">
+                        <i class="bi bi-plus"></i>
+                    </button>
+                </td>
+            </tr>
+           
+        </table>
+    </div>
+
+    <div class="table2-div">
+        <table class="table table-bordered" id="table2">
+            
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
